@@ -1,0 +1,69 @@
+.Board {
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  grid-template-rows: 33.33% 33.33% 33.33%;
+  color: #000;
+}
+
+.use-view-width {
+  width: 90vw;
+  height: 90vw;
+}
+
+.use-view-height {
+  width: 90vh;
+  height: 90vh;
+}
+
+.use-view-width > .Tile img {
+  width: 20vw;
+  height: 20vw;
+}
+
+.use-view-height > .Tile img {
+  width: 20vh;
+  height: 20vh;
+}
+
+.Tile {
+  background: transparent;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  border-color: #000;
+  border-style: solid;
+  border-width: 0;
+  /*outline: 0;*/
+}
+
+.Tile.clickable:hover {
+  background: rgba(255, 0, 0, .1);
+}
+
+.Tile img {
+  display: block;
+}
+
+.use-view-width > .Tile:nth-child(5) {
+  border-width: 2vw;
+}
+
+.use-view-width > .Tile:nth-child(2), .use-view-width > .Tile:nth-child(8) {
+  border-width: 0 2vw;
+}
+
+.use-view-width > .Tile:nth-child(4), .use-view-width > .Tile:nth-child(6) {
+  border-width: 2vw 0;
+}
+
+.use-view-height > .Tile:nth-child(5) {
+  border-width: 2vh;
+}
+
+.use-view-height > .Tile:nth-child(2), .use-view-height > .Tile:nth-child(8) {
+  border-width: 0 2vh;
+}
+
+.use-view-height > .Tile:nth-child(4), .use-view-height > .Tile:nth-child(6) {
+  border-width: 2vh 0;
+}

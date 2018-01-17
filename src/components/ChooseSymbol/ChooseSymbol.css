@@ -1,0 +1,15 @@
+.ChooseSymbol {
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.ChooseSymbol button {
+	background: transparent;
+}
+
+.ChooseSymbol button img {
+	width: 200px;
+}

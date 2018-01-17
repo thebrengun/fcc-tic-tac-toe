@@ -1,0 +1,37 @@
+.App {
+  font-size: 15vw;
+}
+
+.Main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.App, button {
+  color: #000;
+}
+
+button {
+  background: #000;
+  font-size: .5em;
+  border: 0;
+  color: #fff;
+}
+
+.game-over {
+  background: rgba(255, 255, 255, .8);
+  font-weight: 900;
+  text-transform: uppercase;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
